@@ -47,13 +47,13 @@
     description: "",
     leader: "leader1.png",
     planet: "planet1.png"
+    background: "planetBg1.png",
     top: 50%,
     left: 50%,
     completed: false,
     options: [
         {   
             optionId: "",
-            background: "planetBg1.png",
             text: "Tell them to go ahead and press the nuke button",
             result: "War is declared, leading to planetary extinction",
             //how it affects users data
