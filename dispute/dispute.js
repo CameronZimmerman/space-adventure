@@ -49,6 +49,7 @@ disputeChoices.addEventListener('submit', (e) =>{
     user.anguish += option.anguish;
     user.evil += option.evil;
     user.extinguishedLives += option.extinguishedLives;
+    user.completed[disputeId] = true;
     setUser(user);
     alert(`${option.result}... you extinguished ${option.extinguishedLives} lives`);
 

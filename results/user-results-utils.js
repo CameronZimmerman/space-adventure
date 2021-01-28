@@ -1,8 +1,8 @@
 
 export function getEvil(user) {
-    if (user.evil <= 2) return 'good';
+    if (user.evil <= 3) return 'good';
 
-    if (user.evil > 2 && user.evil < 8) return 'gray';
+    if (user.evil >= 4 && user.evil < 8) return 'gray';
 
     if (user.evil >= 8) return 'evil';
 }

@@ -68,7 +68,7 @@ const disputeData = [
                 text: 'You should send them a poisoned pie... no one can resist a delicious pastry',
                 result: 'your client sends the enemy leader a poisoned boysenberry pie. little did you know the enemy leader is immune and misjudges this murderous act as an act of kindness, ending the war',
                 extinguishedLives: 0,
-                evil: 3,
+                evil: 2,
                 anguish: 0       
             }
         ]
