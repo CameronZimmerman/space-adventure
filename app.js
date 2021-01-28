@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { getUser, setUser } from './local-storage-utils.js';
+import { setUser } from './local-storage-utils.js';
 
 const userFormElement = document.getElementById('user-form');
 
