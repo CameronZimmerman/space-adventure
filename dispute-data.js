@@ -5,7 +5,6 @@ const disputeData = [
         leader: 'leader1.png',
         top: 25,
         left: 62,
-        completed: false,
         options: [
             {
                 optionId: 'pay',
@@ -40,7 +39,6 @@ const disputeData = [
         leader: 'leader2.png',
         top: 53,
         left: 22,
-        completed: false,
         options: [
             {
                 optionId: 'force',
@@ -75,7 +73,6 @@ const disputeData = [
         leader: 'leader3.png',
         top: 12,
         left: 62,
-        completed: false,
         options: [
             {
                 optionId: 'first',

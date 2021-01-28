@@ -10,6 +10,7 @@ userFormElement.addEventListener('submit', (e) =>{
     const user = {
         name: formData.get('name'), 
         occupation: formData.get('occupation'),
+        completed: {},
         extinguishedLives:0,
         planetsSaved:0,
         anguish:0,

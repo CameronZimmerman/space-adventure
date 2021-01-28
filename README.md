@@ -98,7 +98,7 @@
         - else ->
             - append li to ul
 
-- 4) quest.js
+- 4) dispute.js
     - grab url gobledegook
     - grab dispute based on id in gobledegook
     - grab dispute dom elements
