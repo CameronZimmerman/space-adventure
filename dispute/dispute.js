@@ -10,6 +10,9 @@ const disputeImgHeading = document.getElementById('dispute-img-heading');
 const disputeImg = document.getElementById('dispute-img');
 const disputeText = document.getElementById('dispute-text');
 const disputeChoices = document.getElementById('dispute-choices');
+const disputeResultsDiv = document.getElementById('results-div');
+const disputeResultsSpan = document.getElementById('results-span');
+const solarSystemButton = document.getElementById('solar-system-button');
 
 const params = new URLSearchParams(window.location.search);
 
@@ -18,19 +21,20 @@ const disputeId = params.get('id');
 const dispute = findById(disputeId, disputes);
 
 disputeHeading.textContent = dispute.title;
-disputeImgHeading.textContent = dispute.leaderName;
+disputeImgHeading.textContent = `Client: ${dispute.leaderName}`;
 disputeImg.src = `../assets/${dispute.leader}`;
 disputeText.textContent = dispute.description;
 
 for (const option of dispute.options) {
     const choiceLabel = document.createElement('label');
     const choiceInput = document.createElement('input');
-    choiceLabel.textContent = option.text;
+    const choiceSpan = document.createElement('span');
+    choiceSpan.textContent = option.text;
     
     choiceInput.type = 'radio';
     choiceInput.name = 'choice';
     choiceInput.value = option.id;
-    choiceLabel.append(choiceInput);
+    choiceLabel.append(choiceInput, choiceSpan);
     disputeChoices.append(choiceLabel);
 }
 
@@ -51,8 +55,14 @@ disputeChoices.addEventListener('submit', (e) =>{
     user.extinguishedLives += option.extinguishedLives;
     user.completed[disputeId] = true;
     setUser(user);
-    alert(`${option.result}... you extinguished ${option.extinguishedLives} lives`);
 
+    disputeResultsDiv.classList.add('textbox');
+    solarSystemButton.classList.toggle('hidden');
+    disputeResultsSpan.textContent = `${option.result}... you extinguished ${option.extinguishedLives} lives`;
+
+    disputeChoices.classList.add('hidden');
+});
+
+solarSystemButton.addEventListener('click', () => {
     window.location = '../solar-system';
-    
 });

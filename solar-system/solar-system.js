@@ -17,11 +17,16 @@ if (finishedGame || user.anguish >= 10) {
 
 for (const dispute of disputes) {
     const disputeLinkli = document.createElement('li');
+    const disputeImg = document.createElement('img');
+    const disputeSpan = document.createElement('span');
+    disputeImg.src = `../assets/${dispute.planet}`;
+    disputeSpan.textContent = dispute.title;
+    disputeSpan.style.position = 'absolute';
 
-    disputeLinkli.classList.add('planet');
-    disputeLinkli.style.left = dispute.left;
-    disputeLinkli.style.top = dispute.top;
-    disputeLinkli.textContent = dispute.id;
+    disputeLinkli.append(disputeImg, disputeSpan);
+    disputeLinkli.style.left = `${dispute.left}%`;
+    disputeLinkli.style.top = `${dispute.top}%`;
+    disputeLinkli.style.position = 'absolute';
 
     if (user.completed[dispute.id] === undefined){
         const disputeLinkA = document.createElement('a');
@@ -29,8 +34,10 @@ for (const dispute of disputes) {
         disputeLinkA.append(disputeLinkli);
         planetUl.append(disputeLinkA);
     }
-    else planetUl.append(disputeLinkli);
-
+    else {
+        planetUl.append(disputeLinkli);
+        disputeImg.classList.add('comp;ete');
+    }  
 }
 
 

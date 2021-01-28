@@ -5,25 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styles/all.css">
     <link rel="stylesheet" href="../styles/dispute.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Dispute</title>
 </head>
 
 <body>
     <header>
-        <h1 id = "dispute-heading"></h1>
+        <h1 id = "dispute-heading" class = "textbox"></h1>
     </header>
     <main>
         <section class="main-section">
-            <div class = 'static-container'>
-                <div class = "img-container">
-                    <h2 id = "dispute-img-heading"></h2>
-                    <img id = "dispute-img">
-                </div>
-                <p id = "dispute-text"></p>
+            <div class = "img-container textbox">
+                <h2 id = "dispute-img-heading"></h2>
+                <img id = "dispute-img">
             </div>
-            <div class = 'dynamic-container'>
-                <form id = "dispute-choices"></form>
+            <p id = "dispute-text" class = "textbox"></p>
+            <form id = "dispute-choices" class = "textbox"></form>
+            <div id = "results-div">
+                <span id = "results-span"></span>
+                <button id = "solar-system-button" class = "hidden">return?</button>
             </div>
         </section>
     </main>

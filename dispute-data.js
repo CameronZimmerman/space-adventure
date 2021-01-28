@@ -5,9 +5,9 @@ const disputeData = [
         description: 'That son of a biscuit Gorkoo Natissi has kidnapped my daughter and is holding her randsom for 26,000,000 oblks. If this isn\'t resolved soon I think I may do something rash... what would you advise?',
         leader: 'leader1.png',
         leaderName: 'Bobjos',
-        bgColor: 'green',
-        top: 25,
-        left: 62,
+        planet: 'planet1.png',
+        top: 15,
+        left: 12,
         options: [
             {
                 id: 'pay',
@@ -42,7 +42,7 @@ const disputeData = [
         description: 'I have decided it is time to end the century long civil war that has been raging on my planet, but I need a good way to end it all for good...what would you advise?',
         leader: 'leader2.png',
         leaderName: 'Olklinn',
-        bgColor: 'blue',
+        planet: 'planet2.png',
         top: 53,
         left: 22,
         options: [
@@ -79,8 +79,8 @@ const disputeData = [
         description: 'I am over 1300 years old and have ruled this planet for almost all my life. My time is coming to an end and I must pass the torch ...what would you advise?',
         leader: 'leader3.png',
         leaderName: 'Grenuts',
-        bgColor: 'yellow',
-        top: 12,
+        planet: 'planet3.png',
+        top: 10,
         left: 62,
         options: [
             {

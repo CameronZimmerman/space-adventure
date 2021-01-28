@@ -5,36 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/all.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Start</title>
 </head>
 
 <body>
     <header>
-        <h2>
+        <h2 class = "textbox">
             Intergalactic space peace mediator simulator 2021
         </h2>
     </header>
     <main>
         <section class="main-section">
-            <form id = "user-form">
+            <form id = "user-form" class = "textbox">
                 <label>
                     Name:
                     <input type="text" name = "name">
                 </label>
                 <label>
                     Doctorate:
-                    <label>
-                        Psychologist
+                    <label class = "choice-label">
                         <input type="radio" name = "occupation" value="psychologist">
+                        <span>Psychologist</span>
                     </label>
-                    <label>
-                        Criminologist
+                    <label class = "choice-label">
                         <input type="radio" name = "occupation" value="criminologist">
+                        <span>Criminologist</span>
                     </label>
-                    <label>
-                        Anthropologist
+                    <label class = "choice-label">
                         <input type="radio" name = "occupation" value="anthropologist">
+                        <span>Anthropologist</span>
                     </label>
                 </label>
 

@@ -1,0 +1,88 @@
+html {
+    background-image: url(../assets/starbg.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body,html {
+    width: 100%;
+    height: 100%;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textbox {
+    font-family: 'Press Start 2P', cursive;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border: 3px solid limegreen;
+    border-radius: 20px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+label :hover + span {
+    color: limegreen;
+}
+input {
+    margin: 5px;
+}
+
+input[type="radio"] + span {
+    margin: 10px;
+}
+
+input[type="radio"]:checked + span{
+    border: 2px dotted lime;
+}
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    padding: 5px;
+    text-align: center;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border: 3px solid limegreen;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: limegreen;
+    color: black;
+}
+
+button:active {
+    background-color: black;
+    color:limegreen
+}
