@@ -12,7 +12,7 @@ userFormElement.addEventListener('submit', (e) =>{
         occupation: formData.get('occupation'),
         completed: {},
         extinguishedLives:0,
-        planetsSaved:0,
+        evil:0,
         anguish:0,
     };
     setUser(user);

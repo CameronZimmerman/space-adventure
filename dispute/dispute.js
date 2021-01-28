@@ -1,6 +1,6 @@
 import findById from '../utils.js';
 import disputes from '../dispute-data.js';
-import { getUser } from '../local-storage-utils.js';
+import { getUser, setUser } from '../local-storage-utils.js';
 
 const user = getUser();
 
@@ -47,8 +47,9 @@ disputeChoices.addEventListener('submit', (e) =>{
     const optionId = formData.get('choice');
     const option = findById(optionId, dispute.options);
     user.anguish += option.anguish;
-    user.planetsSaved += option.planetsSaved;
+    user.evil += option.evil;
     user.extinguishedLives += option.extinguishedLives;
+    setUser(user);
     alert(`${option.result}... you extinguished ${option.extinguishedLives} lives`);
 
     window.location = '../solar-system';
