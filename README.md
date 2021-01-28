@@ -77,7 +77,6 @@
             - set user into localStorage
                 - setUser()
                 - getUser()
-                - updateUser()
              - redirect to solarSystem page
 
 - 3) solarSystem.js
