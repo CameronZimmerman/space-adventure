@@ -14,9 +14,9 @@ main {
     position: relative;
     width: 50%;
     height: 80%;
-    min-width: 300px;
-    min-height: 200px;
-    max-width: 600px;
+    min-width: 275px;
+    min-height: 400px;
+    max-width: 400px;
     max-height: 400px;
 }
 
@@ -46,11 +46,12 @@ span {
 
 @keyframes spin {
     0% {
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
     }
 
     100% {
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+
     }
 }
 
@@ -62,5 +63,5 @@ a :hover img {
 }
 
 a {
-    transition: all 0.3s ease-out; 
+    -webkit-transition: all 0.3s ease-out; 
 }
