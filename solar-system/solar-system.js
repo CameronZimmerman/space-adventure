@@ -4,6 +4,9 @@ import disputes from '../dispute-data.js';
 const user = getUser();
 
 const planetUl = document.getElementById('planet-ul');
+const userLivesSpan = document.getElementById('user-lives');
+const userEvilSpan = document.getElementById('user-evil');
+const userAnguishSpan = document.getElementById('user-anguish');
 
 let finishedGame = true;
 
@@ -14,6 +17,10 @@ for (let dispute of disputes) {
 if (finishedGame || user.anguish >= 10) {
     window.location = '../results';
 }
+
+userLivesSpan.textContent = `you have extinguished ${user.extinguishedLives} lives`;
+userAnguishSpan.textContent = `Anguish: ${user.anguish}`;
+userEvilSpan.textContent = `Evil: ${user.evil}`;
 
 for (const dispute of disputes) {
     const disputeLinkli = document.createElement('li');

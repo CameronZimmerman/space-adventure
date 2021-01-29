@@ -35,6 +35,8 @@ span {
     padding: 2px;
     background-color: rgba(0, 252, 13, 0.425);
     border: 1px white solid;
+    font-family: 'Press Start 2P', cursive;
+;
 }
 
 @keyframes spin {
