@@ -27,7 +27,7 @@ main {
 }
 
 .complete {
-    filter: grayscale(75%);
+    filter: grayscale(90%);
 }
 
 .textbox {

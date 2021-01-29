@@ -43,7 +43,7 @@ for (const dispute of disputes) {
     }
     else {
         planetUl.append(disputeLinkli);
-        disputeImg.classList.add('comp;ete');
+        disputeImg.classList.add('complete');
     }  
 }
 
