@@ -32,6 +32,9 @@ main {
 span {
     display: block;
     margin: 0;
+    padding: 2px;
+    background-color: rgba(0, 252, 13, 0.425);
+    border: 1px white solid;
 }
 
 @keyframes spin {
