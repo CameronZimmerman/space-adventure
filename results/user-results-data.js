@@ -16,3 +16,9 @@ export const userLives = {
     extreme: 'You wanted your client\'s people to die.'
 };
 
+export const userOccupation = {
+    psychologist: 'you felt that your deep understanding of the human psyche influenced your percise decisions,',
+    criminologist: 'your passion for investigating crime and human depravity has lead to your decisions,',
+    anthropologist: 'your study of human culture and interaction led to your nuanced decisions,'
+};
+
