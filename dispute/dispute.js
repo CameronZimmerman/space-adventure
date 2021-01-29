@@ -23,7 +23,7 @@ const dispute = findById(disputeId, disputes);
 disputeHeading.textContent = dispute.title;
 disputeImgHeading.textContent = `Client: ${dispute.leaderName}`;
 disputeImg.src = `../assets/${dispute.leader}`;
-disputeText.textContent = dispute.description;
+disputeText.textContent = `Hello ${user.name}, here's the deal.${dispute.description}`;
 
 for (const option of dispute.options) {
     const choiceLabel = document.createElement('label');

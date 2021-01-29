@@ -15,7 +15,7 @@ const evilText = userEvil[evil];
 const extinguishedLivesText = userLives[extinguishedLives];
 const anguishText = userAnguish[anguish];
 
-const finalMessage = `${evilText} ${anguishText} ${extinguishedLivesText}`;
+const finalMessage = `${user.name}...${evilText} ${anguishText} ${extinguishedLivesText}`;
 
 resultText.textContent = finalMessage;
 restartButton.textContent = 'Try again?';
