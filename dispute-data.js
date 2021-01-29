@@ -2,6 +2,7 @@ const disputeData = [
     {
         id: 'kidnapping',
         title: 'The kidnapping',
+        planetName: 'Gumosus',
         description: 'That son of a biscuit Gorkoo Natissi has kidnapped my daughter and is holding her randsom for 26,000,000 oblks. If this isn\'t resolved soon I think I may do something rash... what would you advise?',
         leader: 'leader1.png',
         leaderName: 'Bobjos',
@@ -39,6 +40,7 @@ const disputeData = [
     {
         id: 'war',
         title: 'The Planetary Civil War',
+        planetName: 'Virimos',
         description: 'I have decided it is time to end the century long civil war that has been raging on my planet, but I need a good way to end it all for good...what would you advise?',
         leader: 'leader2.png',
         leaderName: 'Olklinn',
@@ -76,6 +78,7 @@ const disputeData = [
     {
         id: 'inheritance',
         title: 'The Large Inheritance',
+        planetName: 'Ylsa',
         description: 'I am over 1300 years old and have ruled this planet for almost all my life. My time is coming to an end and I must pass the torch ...what would you advise?',
         leader: 'leader3.png',
         leaderName: 'Grenuts',

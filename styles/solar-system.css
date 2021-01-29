@@ -16,6 +16,11 @@ main {
     height: 400px;
 }
 
+#planet-ul li {
+    display: flex;
+    justify-content: center;
+}
+
 .complete {
     filter: grayscale(75%);
 }

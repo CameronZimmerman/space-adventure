@@ -20,7 +20,7 @@ for (const dispute of disputes) {
     const disputeImg = document.createElement('img');
     const disputeSpan = document.createElement('span');
     disputeImg.src = `../assets/${dispute.planet}`;
-    disputeSpan.textContent = dispute.title;
+    disputeSpan.textContent = dispute.planetName;
     disputeSpan.style.position = 'absolute';
 
     disputeLinkli.append(disputeImg, disputeSpan);
