@@ -12,13 +12,18 @@ main {
 #planet-ul {
     list-style: none;
     position: relative;
-    width: 600px;
-    height: 400px;
+    width: 50%;
+    height: 80%;
+    min-width: 300px;
+    min-height: 200px;
+    max-width: 600px;
+    max-height: 400px;
 }
 
 #planet-ul li {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .complete {
