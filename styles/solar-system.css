@@ -45,21 +45,22 @@ span {
 }
 
 @keyframes spin {
-    from {
+    0% {
         transform: rotate(0deg);
     }
 
-    to {
+    100% {
         transform: rotate(360deg);
     }
 }
 
-a :hover {
+a :hover img {
     animation-name: spin;
     animation-duration: 10000ms;
     animation-timing-function: linear; 
+    animation-iteration-count: infinite;
 }
 
 a {
-    transition: all 2s ease-out; 
+    transition: all 0.3s ease-out; 
 }
