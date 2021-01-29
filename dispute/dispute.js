@@ -61,6 +61,7 @@ disputeChoices.addEventListener('submit', (e) =>{
     disputeResultsSpan.textContent = `${option.result}... you extinguished ${option.extinguishedLives} lives`;
 
     disputeChoices.classList.add('hidden');
+    disputeText.classList.add('hidden');
 });
 
 solarSystemButton.addEventListener('click', () => {
