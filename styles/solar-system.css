@@ -55,13 +55,15 @@ span {
     }
 }
 
-a :hover img {
+a :hover img {    
     animation-name: spin;
     animation-duration: 10000ms;
     animation-timing-function: linear; 
     animation-iteration-count: infinite;
+    
 }
 
-a {
+a img{
+    
     -webkit-transition: all 0.3s ease-out; 
 }

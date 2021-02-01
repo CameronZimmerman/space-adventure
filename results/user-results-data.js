@@ -17,7 +17,7 @@ export const userLives = {
 };
 
 export const userOccupation = {
-    psychologist: 'you felt that your deep understanding of the human psyche influenced your percise decisions,',
+    psychologist: 'you felt that your deep understanding of the human psyche influenced your precise decisions,',
     criminologist: 'your passion for investigating crime and human depravity has lead to your decisions,',
     anthropologist: 'your study of human culture and interaction led to your nuanced decisions,'
 };
