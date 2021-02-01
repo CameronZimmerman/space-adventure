@@ -14,7 +14,7 @@ const anguish = getAnguish(user);
 const evilText = userEvil[evil];
 const extinguishedLivesText = userLives[extinguishedLives];
 const anguishText = userAnguish[anguish];
-const occupationText = userOccupation[user.occupation] || 'you were undecided in career, and this reflects in your decisions,';
+const occupationText = userOccupation[user.occupation] || 'you were undecided in career and this reflects in your decisions,';
 
 const finalMessage = `${user.name}...${evilText} ${occupationText} ${anguishText} ${extinguishedLivesText}`;
 
